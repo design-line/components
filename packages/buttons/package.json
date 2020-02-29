@@ -1,0 +1,15 @@
+{
+  "name": "@dl/buttons",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run build-main && npm run build-esm",
+    "build-main": "babel src -o dist/index.js --source-maps --root-mode upward",
+    "build-esm": "babel src -o dist/index.esm.js --source-maps --root-mode upward --env-name esm"
+  },
+  "dependencies": {
+    "react": "^16.13.0"
+  }
+}
